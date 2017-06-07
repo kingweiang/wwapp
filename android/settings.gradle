@@ -1,0 +1,3 @@
+rootProject.name = 'WwApp'
+
+include ':app'
