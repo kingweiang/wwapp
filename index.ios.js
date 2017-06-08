@@ -7,6 +7,11 @@
 var ReactNative = require('react-native')
 var Icon = require('react-native-vector-icons/Ionicons')
 var React = require('react')
+
+var List = require('./app/creation/index')
+var Edit = require('./app/edit/index')
+var Account = require('./app/account/index')
+
 var Component = React.Component
 var AppRegistry = ReactNative.AppRegistry
 var StyleSheet = ReactNative.StyleSheet
@@ -14,33 +19,7 @@ var Text = ReactNative.Text
 var View = ReactNative.View
 var TabBarIOS = ReactNative.TabBarIOS
 
-var List = React.createClass({
-    render: function() {
-        return (
-            <View style={styles.container}>
-                <Text>列表页面</Text>
-            </View>
-        )
-    }
-})
-var Edit = React.createClass({
-    render: function() {
-        return (
-            <View style={styles.container}>
-                <Text>制作页面</Text>
-            </View>
-        )
-    }
-})
-var Account = React.createClass({
-    render: function() {
-        return (
-            <View style={styles.container}>
-                <Text>账户页面</Text>
-            </View>
-        )
-    }
-})
+
 
 var WwApp = React.createClass({
     getInitialState: function(){
