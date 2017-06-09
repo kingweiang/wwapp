@@ -4,12 +4,16 @@ var React = require('react')
 var StyleSheet = ReactNative.StyleSheet
 var Text = ReactNative.Text
 var View = ReactNative.View
+var Image = ReactNative.Image
 
 var Edit = React.createClass({
     render: function() {
         return (
             <View style={styles.container}>
                 <Text>编辑页面</Text>
+                <Image
+                    source={{uri:'https://dummyimage.com/480/5f5164)'}}
+                />
             </View>
         )
     }
@@ -19,18 +23,9 @@ var Edit = React.createClass({
 var styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
-    tabContent: {
-        flex: 1,
-        alignItems: 'center',
-    },
-    tabText: {
-        color: 'white',
-        margin: 50,
-    },
+
 });
 
 module.exports = Edit;
